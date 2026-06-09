@@ -2,13 +2,13 @@
 
 import torch
 
-from lm_from_scratch.datasets.instruction_dataset import (
+from llm_from_scratch.datasets.instruction_dataset import (
     InstructionDataset,
     InstructionExample,
     default_template,
 )
-from lm_from_scratch.finetuning.sft import sft_loss
-from lm_from_scratch.tokenizers.char_tokenizer import CharTokenizer
+from llm_from_scratch.finetuning.sft import sft_loss
+from llm_from_scratch.tokenizers.char_tokenizer import CharTokenizer
 
 
 def test_default_template_returns_prompt_and_response() -> None:

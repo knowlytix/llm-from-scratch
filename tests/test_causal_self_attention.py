@@ -2,7 +2,7 @@
 
 import torch
 
-from lm_from_scratch.models.attention import (
+from llm_from_scratch.models.attention import (
     SingleHeadCausalSelfAttention,
     TinyCausalAttnLM,
     causal_mask,

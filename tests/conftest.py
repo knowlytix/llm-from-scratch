@@ -1,4 +1,4 @@
-"""Pytest configuration. Ensures the repo root is on sys.path so tests can import lm_from_scratch."""
+"""Pytest configuration. Ensures the repo root is on sys.path so tests can import llm_from_scratch."""
 
 import sys
 from pathlib import Path

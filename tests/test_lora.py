@@ -3,14 +3,14 @@
 import torch
 import torch.nn as nn
 
-from lm_from_scratch.finetuning.lora import (
+from llm_from_scratch.finetuning.lora import (
     LoRALinear,
     apply_lora,
     lora_state_dict,
     trainable_param_count,
 )
-from lm_from_scratch.finetuning.rag_stub import RetrievalStub
-from lm_from_scratch.finetuning.synthetic import SyntheticGenerator, filter_synthetic
+from llm_from_scratch.finetuning.rag_stub import RetrievalStub
+from llm_from_scratch.finetuning.synthetic import SyntheticGenerator, filter_synthetic
 
 
 def test_lora_at_init_matches_base() -> None:

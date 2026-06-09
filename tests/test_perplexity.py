@@ -4,9 +4,9 @@ import math
 
 import torch
 
-from lm_from_scratch.datasets.sequence_dataset import CausalLMDataset
-from lm_from_scratch.evaluation.diagnostics import per_position_loss, token_accuracy
-from lm_from_scratch.evaluation.perplexity import evaluate_perplexity
+from llm_from_scratch.datasets.sequence_dataset import CausalLMDataset
+from llm_from_scratch.evaluation.diagnostics import per_position_loss, token_accuracy
+from llm_from_scratch.evaluation.perplexity import evaluate_perplexity
 
 
 class _UniformLM(torch.nn.Module):

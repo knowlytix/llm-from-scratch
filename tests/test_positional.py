@@ -5,8 +5,8 @@ import math
 import pytest
 import torch
 
-from lm_from_scratch.models.attention import scaled_dot_product_attention
-from lm_from_scratch.models.positional import (
+from llm_from_scratch.models.attention import scaled_dot_product_attention
+from llm_from_scratch.models.positional import (
     ALiBi,
     LearnedPositionalEmbedding,
     RotaryPositionalEmbedding,

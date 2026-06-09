@@ -3,10 +3,10 @@
 import numpy as np
 import torch
 
-from lm_from_scratch.interpretability.embeddings import embedding_2d
-from lm_from_scratch.interpretability.probes import LinearProbe
-from lm_from_scratch.models.configs import GPTConfig
-from lm_from_scratch.models.gpt import TinyGPT
+from llm_from_scratch.interpretability.embeddings import embedding_2d
+from llm_from_scratch.interpretability.probes import LinearProbe
+from llm_from_scratch.models.configs import GPTConfig
+from llm_from_scratch.models.gpt import TinyGPT
 
 
 def test_embedding_2d_returns_2d() -> None:

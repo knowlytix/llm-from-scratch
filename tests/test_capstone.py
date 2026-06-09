@@ -2,8 +2,8 @@
 
 from pathlib import Path
 
-from lm_from_scratch.capstone.manifest import ArtifactManifest
-from lm_from_scratch.capstone.pipeline import run_pipeline
+from llm_from_scratch.capstone.manifest import ArtifactManifest
+from llm_from_scratch.capstone.pipeline import run_pipeline
 
 
 def test_pipeline_skeleton_returns_stages() -> None:

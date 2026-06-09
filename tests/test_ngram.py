@@ -5,7 +5,7 @@ import random
 
 import pytest
 
-from lm_from_scratch.models.ngram import NGramLanguageModel
+from llm_from_scratch.models.ngram import NGramLanguageModel
 
 
 def test_unigram_probs_sum_to_one_with_smoothing() -> None:

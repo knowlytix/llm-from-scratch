@@ -4,11 +4,11 @@ import math
 
 import torch
 
-from lm_from_scratch.models.attention import (
+from llm_from_scratch.models.attention import (
     SingleHeadAttention,
     scaled_dot_product_attention,
 )
-from lm_from_scratch.utils.env import set_seed
+from llm_from_scratch.utils.env import set_seed
 
 
 def test_output_shape() -> None:

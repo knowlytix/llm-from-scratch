@@ -1,9 +1,9 @@
-"""Tests for lm_from_scratch.utils.env."""
+"""Tests for llm_from_scratch.utils.env."""
 
 import numpy as np
 import torch
 
-from lm_from_scratch.utils.env import check_environment, set_seed
+from llm_from_scratch.utils.env import check_environment, set_seed
 
 
 def test_check_environment_has_expected_keys() -> None:

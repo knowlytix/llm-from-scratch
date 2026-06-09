@@ -2,7 +2,7 @@
 
 import torch
 
-from lm_from_scratch.evaluation.failure_modes.probes import (
+from llm_from_scratch.evaluation.failure_modes.probes import (
     hallucination_check,
     prompt_sensitivity,
     refusal_probe,

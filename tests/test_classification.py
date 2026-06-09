@@ -4,15 +4,15 @@ from __future__ import annotations
 
 import torch
 
-from lm_from_scratch.finetuning.classification import (
+from llm_from_scratch.finetuning.classification import (
     ClassificationDataset,
     ClassifierConfig,
     TinyGPTClassifier,
     classification_train,
     evaluate_classifier,
 )
-from lm_from_scratch.models.configs import GPTConfig
-from lm_from_scratch.models.gpt import TinyGPT
+from llm_from_scratch.models.configs import GPTConfig
+from llm_from_scratch.models.gpt import TinyGPT
 
 
 def _tiny_backbone(vocab_size: int = 280, block_size: int = 16) -> TinyGPT:

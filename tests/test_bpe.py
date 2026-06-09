@@ -4,8 +4,8 @@ from pathlib import Path
 
 import pytest
 
-from lm_from_scratch.tokenizers.bpe_internals import get_pair_counts, merge_pair
-from lm_from_scratch.tokenizers.bpe_tokenizer import BPETokenizer
+from llm_from_scratch.tokenizers.bpe_internals import get_pair_counts, merge_pair
+from llm_from_scratch.tokenizers.bpe_tokenizer import BPETokenizer
 
 
 # --- Internals ---------------------------------------------------------
@@ -32,7 +32,7 @@ def test_merge_pair_no_overlap() -> None:
 
 def test_bpe_train_grows_vocab_to_target() -> None:
     # Need enough distinct pairs to support the requested number of merges.
-    from lm_from_scratch.text.toy_corpus import load_tiny_shakespeare
+    from llm_from_scratch.text.toy_corpus import load_tiny_shakespeare
 
     tok = BPETokenizer(vocab_size=300)  # 260 base + 40 merges
     tok.train([load_tiny_shakespeare()[:50_000]])

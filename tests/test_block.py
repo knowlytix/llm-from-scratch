@@ -2,8 +2,8 @@
 
 import torch
 
-from lm_from_scratch.models.norms import RMSNorm
-from lm_from_scratch.models.transformer_block import MLP, TransformerBlock
+from llm_from_scratch.models.norms import RMSNorm
+from llm_from_scratch.models.transformer_block import MLP, TransformerBlock
 
 
 def test_rmsnorm_preserves_shape() -> None:
