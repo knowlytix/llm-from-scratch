@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lm-from-scratch"
+version = "0.0.1"
+description = "Building Language Models from Scratch — tokenizer, Transformer, training, inference, and fine-tuning in clean, tested PyTorch."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "A. Sudjianto" }]
+maintainers = [{ name = "Knowlytix" }]
+keywords = ["llm", "transformer", "gpt", "from-scratch", "pytorch", "tokenizer", "lora", "dpo", "education"]
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "torch>=2.0",
+    "numpy",
+    "scikit-learn",
+]
+
+[project.optional-dependencies]
+notebooks = ["jupyterlab", "matplotlib", "pandas", "ipywidgets", "tqdm"]
+api = ["anthropic>=0.30"]
+dev = ["pytest", "ruff", "black"]
+all = ["lm-from-scratch[notebooks,api]"]
+
+[project.urls]
+Homepage = "https://github.com/knowlytix/llm-from-scratch"
+Repository = "https://github.com/knowlytix/llm-from-scratch"
+Issues = "https://github.com/knowlytix/llm-from-scratch/issues"
+
+[tool.setuptools.packages.find]
+include = ["lm_from_scratch*"]
