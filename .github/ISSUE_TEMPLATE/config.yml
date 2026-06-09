@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/knowlytix/llm-from-scratch/blob/main/SECURITY.md
+    about: Please report security issues privately (security@knowlytix.ai), not as public issues.
+  - name: GMS / commercial (knowlytix) questions
+    url: https://knowlytix.ai/
+    about: Questions about the licensed GMS backend, the Pro edition, or licensing.
