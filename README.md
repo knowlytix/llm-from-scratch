@@ -35,8 +35,8 @@ pip install "lm-from-scratch[notebooks]" # + jupyterlab, matplotlib, pandas
 pip install "lm-from-scratch[all]"       # everything
 ```
 
-Python 3.10+. A CUDA-capable GPU is recommended for the training chapters.
+Python 3.12+. A CUDA-capable GPU is recommended for the training chapters.
 
 ## License
 
-Apache-2.0. © 2026 Knowlytix. Authored by A. Sudjianto.
+Apache-2.0. © 2026 Knowlytix.

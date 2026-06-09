@@ -7,10 +7,9 @@ name = "lm-from-scratch"
 version = "0.0.1"
 description = "Building Language Models from Scratch — tokenizer, Transformer, training, inference, and fine-tuning in clean, tested PyTorch."
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.12"
 license = { file = "LICENSE" }
-authors = [{ name = "A. Sudjianto" }]
-maintainers = [{ name = "Knowlytix" }]
+authors = [{ name = "Knowlytix" }]
 keywords = ["llm", "transformer", "gpt", "from-scratch", "pytorch", "tokenizer", "lora", "dpo", "education"]
 classifiers = [
     "License :: OSI Approved :: Apache Software License",
