@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lm-from-scratch"
-version = "0.0.1"
+version = "0.1.0"
 description = "Building Language Models from Scratch — tokenizer, Transformer, training, inference, and fine-tuning in clean, tested PyTorch."
 readme = "README.md"
 requires-python = ">=3.12"
