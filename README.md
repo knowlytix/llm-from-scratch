@@ -37,6 +37,25 @@ pip install "llm-from-scratch[all]"       # everything
 
 Python 3.12+. A CUDA-capable GPU is recommended for the training chapters.
 
+## Quickstart
+
+Every piece is built from scratch and importable on its own — e.g. the byte-level
+/ char tokenizer:
+
+```python
+from llm_from_scratch.tokenizers.char_tokenizer import CharTokenizer
+
+tok = CharTokenizer()
+tok.train("hello world")
+ids = tok.encode("hello")
+print(ids, "->", tok.decode(ids), "| vocab:", tok.vocab_size)
+# [7, 6, 8, 8, 9] -> hello | vocab: 12
+```
+
+From here the chapters build up the Transformer, training loop, KV-cache
+inference, evaluation, and fine-tuning — each paired with a runnable notebook in
+[`notebooks/`](notebooks/).
+
 ## License
 
 Apache-2.0. © 2026 Knowlytix.
