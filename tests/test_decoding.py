@@ -2,10 +2,10 @@
 
 import torch
 
-from lm_from_scratch.generation.decoding import beam_search, greedy_decode, sample_decode
-from lm_from_scratch.generation.sampling import top_k_filter, top_p_filter
-from lm_from_scratch.models.configs import GPTConfig
-from lm_from_scratch.models.gpt import TinyGPT
+from llm_from_scratch.generation.decoding import beam_search, greedy_decode, sample_decode
+from llm_from_scratch.generation.sampling import top_k_filter, top_p_filter
+from llm_from_scratch.models.configs import GPTConfig
+from llm_from_scratch.models.gpt import TinyGPT
 
 
 def _model():

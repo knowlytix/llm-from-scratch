@@ -2,10 +2,10 @@
 
 import torch
 
-from lm_from_scratch.inference.engine import InferenceEngine
-from lm_from_scratch.inference.kv_cache import KVCache
-from lm_from_scratch.models.configs import GPTConfig
-from lm_from_scratch.models.gpt import TinyGPT
+from llm_from_scratch.inference.engine import InferenceEngine
+from llm_from_scratch.inference.kv_cache import KVCache
+from llm_from_scratch.models.configs import GPTConfig
+from llm_from_scratch.models.gpt import TinyGPT
 
 
 def _model():

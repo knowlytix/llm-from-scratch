@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "lm-from-scratch"
+name = "llm-from-scratch"
 version = "0.1.0"
 description = "Building Language Models from Scratch — tokenizer, Transformer, training, inference, and fine-tuning in clean, tested PyTorch."
 readme = "README.md"
@@ -28,7 +28,7 @@ dependencies = [
 notebooks = ["jupyterlab", "matplotlib", "pandas", "ipywidgets", "tqdm"]
 api = ["anthropic>=0.30"]
 dev = ["pytest", "ruff", "black"]
-all = ["lm-from-scratch[notebooks,api]"]
+all = ["llm-from-scratch[notebooks,api]"]
 
 [project.urls]
 Homepage = "https://github.com/knowlytix/llm-from-scratch"
@@ -36,4 +36,4 @@ Repository = "https://github.com/knowlytix/llm-from-scratch"
 Issues = "https://github.com/knowlytix/llm-from-scratch/issues"
 
 [tool.setuptools.packages.find]
-include = ["lm_from_scratch*"]
+include = ["llm_from_scratch*"]

@@ -2,11 +2,11 @@
 
 import torch
 
-from lm_from_scratch.datasets.sequence_dataset import CausalLMDataset
-from lm_from_scratch.models.rnn_from_scratch import HandRolledGRUCell
-from lm_from_scratch.models.rnn_lm import RNNLanguageModel
-from lm_from_scratch.training.simple_loop import simple_train
-from lm_from_scratch.utils.env import set_seed
+from llm_from_scratch.datasets.sequence_dataset import CausalLMDataset
+from llm_from_scratch.models.rnn_from_scratch import HandRolledGRUCell
+from llm_from_scratch.models.rnn_lm import RNNLanguageModel
+from llm_from_scratch.training.simple_loop import simple_train
+from llm_from_scratch.utils.env import set_seed
 
 
 def test_rnn_lm_forward_shape() -> None:

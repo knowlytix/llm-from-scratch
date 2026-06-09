@@ -2,7 +2,7 @@
 
 import torch
 
-from lm_from_scratch.training.efficiency import autocast_context, use_fused_sdpa
+from llm_from_scratch.training.efficiency import autocast_context, use_fused_sdpa
 
 
 def test_use_fused_sdpa_returns_bool() -> None:
@@ -18,9 +18,9 @@ def test_autocast_context_dtype_map() -> None:
 
 
 def test_enable_gradient_checkpointing_does_not_break_forward() -> None:
-    from lm_from_scratch.models.configs import GPTConfig
-    from lm_from_scratch.models.gpt import TinyGPT
-    from lm_from_scratch.training.efficiency import enable_gradient_checkpointing
+    from llm_from_scratch.models.configs import GPTConfig
+    from llm_from_scratch.models.gpt import TinyGPT
+    from llm_from_scratch.training.efficiency import enable_gradient_checkpointing
 
     cfg = GPTConfig(vocab_size=32, block_size=8, embedding_dim=16, num_layers=2, num_heads=4, dropout=0.0)
     m = TinyGPT(cfg)

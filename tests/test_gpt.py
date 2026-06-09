@@ -5,9 +5,9 @@ from pathlib import Path
 import pytest
 import torch
 
-from lm_from_scratch.models.configs import GPTConfig
-from lm_from_scratch.models.gpt import TinyGPT
-from lm_from_scratch.training.checkpointing import load_checkpoint, save_checkpoint
+from llm_from_scratch.models.configs import GPTConfig
+from llm_from_scratch.models.gpt import TinyGPT
+from llm_from_scratch.training.checkpointing import load_checkpoint, save_checkpoint
 
 
 def _small_config(**overrides) -> GPTConfig:

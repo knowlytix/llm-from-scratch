@@ -1,6 +1,6 @@
-"""Tests for lm_from_scratch.text.toy_corpus."""
+"""Tests for llm_from_scratch.text.toy_corpus."""
 
-from lm_from_scratch.text.toy_corpus import load_tiny_shakespeare, next_token_counts
+from llm_from_scratch.text.toy_corpus import load_tiny_shakespeare, next_token_counts
 
 
 def test_load_tiny_shakespeare_returns_nonempty_text() -> None:

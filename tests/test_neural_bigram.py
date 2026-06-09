@@ -3,13 +3,13 @@
 import torch
 import pytest
 
-from lm_from_scratch.datasets.collators import causal_lm_collator
-from lm_from_scratch.datasets.sequence_dataset import CausalLMDataset
-from lm_from_scratch.models.feedforward_lm import FeedForwardLM
-from lm_from_scratch.models.neural_bigram import NeuralBigramLM
-from lm_from_scratch.training.losses import cross_entropy_loss
-from lm_from_scratch.training.simple_loop import simple_train
-from lm_from_scratch.utils.env import set_seed
+from llm_from_scratch.datasets.collators import causal_lm_collator
+from llm_from_scratch.datasets.sequence_dataset import CausalLMDataset
+from llm_from_scratch.models.feedforward_lm import FeedForwardLM
+from llm_from_scratch.models.neural_bigram import NeuralBigramLM
+from llm_from_scratch.training.losses import cross_entropy_loss
+from llm_from_scratch.training.simple_loop import simple_train
+from llm_from_scratch.utils.env import set_seed
 
 
 # --- CausalLMDataset ---------------------------------------------------

@@ -2,13 +2,13 @@
 
 import torch
 
-from lm_from_scratch.training.optim import HandRolledAdamW, param_groups_for_weight_decay
-from lm_from_scratch.training.schedules import (
+from llm_from_scratch.training.optim import HandRolledAdamW, param_groups_for_weight_decay
+from llm_from_scratch.training.schedules import (
     cosine_decay,
     linear_warmup,
     warmup_cosine,
 )
-from lm_from_scratch.training.trainer import Trainer, TrainingConfig
+from llm_from_scratch.training.trainer import Trainer, TrainingConfig
 
 
 def test_hand_rolled_adamw_matches_torch_adamw() -> None:
@@ -79,7 +79,7 @@ class _Toy(torch.nn.Module):
 
 def test_trainer_fits_and_records_history() -> None:
     torch.manual_seed(0)
-    from lm_from_scratch.datasets.sequence_dataset import CausalLMDataset
+    from llm_from_scratch.datasets.sequence_dataset import CausalLMDataset
     V = 8
     ids = [i % V for i in range(200)]
     ds = CausalLMDataset(ids, block_size=8, stride=8)

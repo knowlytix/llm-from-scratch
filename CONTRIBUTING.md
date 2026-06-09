@@ -1,7 +1,7 @@
-# Contributing to lm-from-scratch
+# Contributing to llm-from-scratch
 
 Thanks for your interest in contributing! This repository is the **open**
-(lm-from-scratch) part of the project — it runs with no license. The advanced GMS
+(llm-from-scratch) part of the project — it runs with no license. The advanced GMS
 features live in the separately-licensed `knowlytix` backend and are **not**
 developed here; please keep contributions to the open baseline.
 

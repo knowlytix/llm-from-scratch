@@ -1,19 +1,19 @@
-"""Tests for the lm_from_scratch.tokenizers subpackage (Chapter 3)."""
+"""Tests for the llm_from_scratch.tokenizers subpackage (Chapter 3)."""
 
 from pathlib import Path
 
 import pytest
 
-from lm_from_scratch.tokenizers.base import BaseTokenizer
-from lm_from_scratch.tokenizers.byte_tokenizer import ByteTokenizer
-from lm_from_scratch.tokenizers.char_tokenizer import CharTokenizer
-from lm_from_scratch.tokenizers.diagnostics import (
+from llm_from_scratch.tokenizers.base import BaseTokenizer
+from llm_from_scratch.tokenizers.byte_tokenizer import ByteTokenizer
+from llm_from_scratch.tokenizers.char_tokenizer import CharTokenizer
+from llm_from_scratch.tokenizers.diagnostics import (
     compression_ratio,
     tokenizer_report,
     tokens_per_word,
     unknown_token_rate,
 )
-from lm_from_scratch.tokenizers.word_tokenizer import WhitespaceTokenizer
+from llm_from_scratch.tokenizers.word_tokenizer import WhitespaceTokenizer
 
 
 # --- Round-trip identity on training corpus ---------------------------

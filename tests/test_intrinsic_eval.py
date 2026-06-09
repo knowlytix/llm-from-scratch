@@ -4,7 +4,7 @@ import math
 
 import numpy as np
 
-from lm_from_scratch.evaluation.calibration import (
+from llm_from_scratch.evaluation.calibration import (
     expected_calibration_error,
     reliability_diagram,
 )

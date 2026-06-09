@@ -3,11 +3,11 @@
 import json
 from pathlib import Path
 
-from lm_from_scratch.governance.audit import AuditLogger, audit_record_schema
-from lm_from_scratch.governance.grounding import GroundingCheck
-from lm_from_scratch.governance.harness import GovernanceHarness
-from lm_from_scratch.governance.policies import InputPolicy, OutputPolicy, PolicyResult
-from lm_from_scratch.governance.validators import contains_pii
+from llm_from_scratch.governance.audit import AuditLogger, audit_record_schema
+from llm_from_scratch.governance.grounding import GroundingCheck
+from llm_from_scratch.governance.harness import GovernanceHarness
+from llm_from_scratch.governance.policies import InputPolicy, OutputPolicy, PolicyResult
+from llm_from_scratch.governance.validators import contains_pii
 
 
 class _StubEngine:

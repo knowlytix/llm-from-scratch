@@ -2,9 +2,9 @@
 
 import math
 
-from lm_from_scratch.models.configs import GPTConfig
-from lm_from_scratch.models.gpt import TinyGPT
-from lm_from_scratch.utils.scaling import (
+from llm_from_scratch.models.configs import GPTConfig
+from llm_from_scratch.models.gpt import TinyGPT
+from llm_from_scratch.utils.scaling import (
     chinchilla_optimal,
     count_parameters,
     inference_flops,

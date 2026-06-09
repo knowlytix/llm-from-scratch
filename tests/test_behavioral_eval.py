@@ -4,9 +4,9 @@ import csv
 
 import numpy as np
 
-from lm_from_scratch.evaluation.judges import HeuristicJudge, LLMJudge, ReferenceMatchJudge
-from lm_from_scratch.evaluation.prompt_suite import Prompt, PromptSuite
-from lm_from_scratch.evaluation.significance import bootstrap_ci, paired_bootstrap
+from llm_from_scratch.evaluation.judges import HeuristicJudge, LLMJudge, ReferenceMatchJudge
+from llm_from_scratch.evaluation.prompt_suite import Prompt, PromptSuite
+from llm_from_scratch.evaluation.significance import bootstrap_ci, paired_bootstrap
 
 
 def test_reference_match_judge() -> None:

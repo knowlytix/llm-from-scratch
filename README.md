@@ -30,9 +30,9 @@ is verified against PyTorch's reference, and DPO comes with a proof.
 ## Install
 
 ```bash
-pip install lm-from-scratch              # core: torch, numpy, scikit-learn
-pip install "lm-from-scratch[notebooks]" # + jupyterlab, matplotlib, pandas
-pip install "lm-from-scratch[all]"       # everything
+pip install llm-from-scratch              # core: torch, numpy, scikit-learn
+pip install "llm-from-scratch[notebooks]" # + jupyterlab, matplotlib, pandas
+pip install "llm-from-scratch[all]"       # everything
 ```
 
 Python 3.12+. A CUDA-capable GPU is recommended for the training chapters.

@@ -1,15 +1,15 @@
-"""Tests for the lm_from_scratch.text subpackage (Chapter 2)."""
+"""Tests for the llm_from_scratch.text subpackage (Chapter 2)."""
 
-from lm_from_scratch.text.cleaning import (
+from llm_from_scratch.text.cleaning import (
     clean_text,
     normalize_whitespace,
     strip_control_chars,
 )
-from lm_from_scratch.text.corpus import TextCorpus
-from lm_from_scratch.text.dedup import exact_dedup, near_dedup, true_jaccard
-from lm_from_scratch.text.diagnostics import corpus_summary
-from lm_from_scratch.text.packing import pack_documents, sliding_windows
-from lm_from_scratch.text.splitting import detect_contamination, split_corpus
+from llm_from_scratch.text.corpus import TextCorpus
+from llm_from_scratch.text.dedup import exact_dedup, near_dedup, true_jaccard
+from llm_from_scratch.text.diagnostics import corpus_summary
+from llm_from_scratch.text.packing import pack_documents, sliding_windows
+from llm_from_scratch.text.splitting import detect_contamination, split_corpus
 
 
 # --- cleaning -----------------------------------------------------------

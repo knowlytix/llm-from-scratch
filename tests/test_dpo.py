@@ -4,8 +4,8 @@ import math
 
 import torch
 
-from lm_from_scratch.finetuning.dpo import dpo_loss
-from lm_from_scratch.finetuning.reasoning import extract_answer, format_cot
+from llm_from_scratch.finetuning.dpo import dpo_loss
+from llm_from_scratch.finetuning.reasoning import extract_answer, format_cot
 
 
 def test_dpo_loss_zero_margin_is_log_2() -> None:

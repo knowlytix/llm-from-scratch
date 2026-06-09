@@ -4,8 +4,8 @@ import pytest
 import torch
 import torch.nn as nn
 
-from lm_from_scratch.datasets.sequence_dataset import CausalLMDataset
-from lm_from_scratch.training.diagnostics import (
+from llm_from_scratch.datasets.sequence_dataset import CausalLMDataset
+from llm_from_scratch.training.diagnostics import (
     ActivationMonitor,
     GradientMonitor,
     NaNDetector,
